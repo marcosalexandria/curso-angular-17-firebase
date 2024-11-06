@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-
+  //@Input() é para dizer que essa varial será recebida pelo componente pai
+  @Input() textoBotao: string;
 }

@@ -1,1 +1,9 @@
 <router-outlet></router-outlet>
+<div class="container mt-5">
+  <!--chamando button e passando o testo direto-->
+  <app-button textoBotao="Salvar"></app-button>
+  <!--chamando button e passando o testo pela variavel textoExibido daqui do component pai-->
+  <app-button [textoBotao]="textoExibido"></app-button>
+
+  <app-button textoBotao="Editar"></app-button>
+</div>
