@@ -1,2 +1,2 @@
-
-<button class="botao-primario">{{ textoBotao }}</button>
+<!--se a variavel size for 100 ele adiciona a classe w-100-->
+<button class="botao-primario" [ngClass]="{'w-100': size === '100'}">{{ textoBotao }}</button>

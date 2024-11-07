@@ -8,4 +8,5 @@ import { Component, Input} from '@angular/core';
 export class ButtonComponent {
   //@Input() é para dizer que essa varial será recebida pelo componente pai
   @Input() textoBotao: string;
+  @Input() size: string;
 }
