@@ -15,7 +15,7 @@ export class LoginComponent {
   login(){
     //salva na memoria do navegador durante a sessao
     sessionStorage.setItem('user', this.userName);
-
+    
     this.router.navigate(['/home']);
   }
 }
