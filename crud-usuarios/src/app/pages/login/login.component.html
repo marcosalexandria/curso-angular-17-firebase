@@ -5,8 +5,11 @@
       <h1 class="titulo">CRUD USER</h1>
       <h2 class="subtitulo">Mais eficiencia no controle de usuários</h2>
 
-      <input class="input-form" type="text" placeholder="Digite seu nome">
-      <app-button textoBotao="Acessar" size="100"></app-button>
+      <!-- [(ngModel)] conecta em tempo real com a variavel
+       como só tem um componente nesse formulário [ngModelOptions]="{standalone: true}" vai fazer funcionar sem bug-->
+      <input [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" class="input-form" type="text" placeholder="Digite seu nome">
+
+      <app-button textoBotao="Acessar" size="100" (click)="login()"></app-button>
   </form>
 
   <p class="footer">© 2024 | Desenvolvido por Marcos</p>
