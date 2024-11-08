@@ -1,2 +1,75 @@
 <app-menu></app-menu>
-<p>home works!</p>
+
+<div class="container-fluid pt-3 ">
+  <div class="row">
+    <!-- Lado esquerdo da tela-->
+    <div class="col-12 col-lg-9">
+
+      <div class="card-info">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <h1 class="titulo"> Crud Users </h1>
+
+            <h3 class="subtitulo">Mais eficiência na gestão dos usuários e de seus benefícios. Chega de sistemas antigos
+              e sem usabilidade, agora com o Crud Users seu trabalho fica até 3x mais rápido e simplificado.<br/>
+              Confira um resumo das informações em nosso Dashboard</h3>
+
+            <app-button textoBotao="Iniciar" routerLink="/usuarios"></app-button>
+
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img src="assets/dashboard.png" width="100%">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mt-4">
+
+         <!--Card Esquerda-->
+        <div class="col-6">
+          <div class="card-info">
+            <div class="row">
+
+              <div class="col-8">
+                <p class="texto-card">Total de usuários cadstrados no sistama</p>
+                <p class="numero-card">79</p>
+                <p class="destaque-card">+ 5 adicionados no ultimo mês</p>
+              </div>
+
+              <div class="col-4">
+                <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate" value="79"></mat-progress-spinner>
+                <p class="info-spinner">79/150</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+         <!--Card Direita-->
+         <div class="col-6">
+          <div class="card-info">
+            <div class="row">
+
+              <div class="col-8">
+                <p class="texto-card">Total de beneficios cadastrados</p>
+                <p class="numero-card">4</p>
+                <p class="destaque-card">+ 2 adicionados no ultimo mês</p>
+              </div>
+
+              <div class="col-4">
+                <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate" value="80"></mat-progress-spinner>
+                <p class="info-spinner">4/5</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
