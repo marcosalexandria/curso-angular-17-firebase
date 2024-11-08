@@ -11,7 +11,7 @@
             <h1 class="titulo"> Crud Users </h1>
 
             <h3 class="subtitulo">Mais eficiência na gestão dos usuários e de seus benefícios. Chega de sistemas antigos
-              e sem usabilidade, agora com o Crud Users seu trabalho fica até 3x mais rápido e simplificado.<br/>
+              e sem usabilidade, agora com o Crud Users seu trabalho fica até 3x mais rápido e simplificado.<br />
               Confira um resumo das informações em nosso Dashboard</h3>
 
             <app-button textoBotao="Iniciar" routerLink="/usuarios"></app-button>
@@ -27,7 +27,7 @@
 
       <div class="row mt-4">
 
-         <!--Card Esquerda-->
+        <!--Card spinner Esquerda-->
         <div class="col-6">
           <div class="card-info">
             <div class="row">
@@ -39,7 +39,8 @@
               </div>
 
               <div class="col-4">
-                <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate" value="79"></mat-progress-spinner>
+                <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate"
+                  value="79"></mat-progress-spinner>
                 <p class="info-spinner">79/150</p>
               </div>
 
@@ -47,8 +48,8 @@
           </div>
         </div>
 
-         <!--Card Direita-->
-         <div class="col-6">
+        <!--Card spinner Direita-->
+        <div class="col-6">
           <div class="card-info">
             <div class="row">
 
@@ -59,7 +60,8 @@
               </div>
 
               <div class="col-4">
-                <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate" value="80"></mat-progress-spinner>
+                <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate"
+                  value="80"></mat-progress-spinner>
                 <p class="info-spinner">4/5</p>
               </div>
 
@@ -67,9 +69,53 @@
           </div>
         </div>
 
+        <!--Card uruário cadastrado-->
+        <div class="col-12 mt-4">
+          <div class="card-info">
+            <h3 class="titulo">Ultimo usuário cadastrado</h3>
+            <hr class="hr">
+
+            <div class="row">
+              <div class="col-1"> <mat-icon>account_circle</mat-icon> </div>
+              <div class="col-1">
+                <p class="texto-p"> 1 </p>
+              </div>
+              <div class="col">
+                <p class="texto-p"> João Sena </p>
+              </div>
+              <div class="col">
+                <p class="texto-p"> Desenvolvedor de Software </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
+
+    <!-- Lado direito da tela-->
+    <div class="col-12 col-lg-3">
+
+      <!-- Perfil-->
+      <div class="card-info">
+        <img src="assets/perfil.jpg" class="img-perfil" width="90px">
+        <h4>Seja bem vindo</h4>
+        <h5>João Sena</h5>
+        <li><mat-icon>location_on</mat-icon> SP - Brasil</li>
+      </div>
+
+      <hr class="hr">
+      <p class="texto-p">Um ser humano deve transformar informação em inteligência ou conhecimento. Tendemos a esquecer que nenhum computador jamais fará uma nova pergunta</p>
+      <hr class="hr">
+
+      <!--Funcionalidades-->
+      <li> <mat-icon>person</mat-icon> Gerencie usuaários </li>
+      <li> <mat-icon>loyalty</mat-icon> Adicione beneficios </li>
+      <li> <mat-icon>format_list_bulleted</mat-icon> Consulte cadastros </li>
+      <li> <mat-icon>delete</mat-icon> Exclua usuarios </li>
+
+    </div>
+
   </div>
 </div>
-
