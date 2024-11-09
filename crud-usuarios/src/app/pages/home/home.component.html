@@ -1,18 +1,20 @@
-<app-menu></app-menu>
 
-<div class="container-fluid pt-3 ">
+<div class="teste">
+  <app-menu></app-menu>
+<div class="container-fluid pt-3">
+
   <div class="row">
     <!-- Lado esquerdo da tela-->
-    <div class="col-12 col-lg-9">
+    <div class="col-12 col-lg-9 container-fluid">
 
       <div class="card-info">
         <div class="row">
           <div class="col-12 col-md-8">
             <h1 class="titulo"> Crud Users </h1>
 
-            <h3 class="subtitulo">Mais eficiência na gestão dos usuários e de seus benefícios. Chega de sistemas antigos
-              e sem usabilidade, agora com o Crud Users seu trabalho fica até 3x mais rápido e simplificado.<br />
-              Confira um resumo das informações em nosso Dashboard</h3>
+            <h3 class="subtitulo">Mais eficiência na gestão dos <span>usuários</span> e de seus benefícios. Chega de sistemas antigos
+              e sem usabilidade, agora com o <span>Crud Users</span>  seu trabalho fica até 3x mais rápido e simplificado.<br />
+              Confira um resumo das informações em nosso <span>Dashboard</span></h3>
 
             <app-button textoBotao="Iniciar" routerLink="/usuarios"></app-button>
 
@@ -25,7 +27,7 @@
         </div>
       </div>
 
-      <div class="row mt-4">
+      <div class="row mt-3">
 
         <!--Card spinner Esquerda-->
         <div class="col-6">
@@ -70,7 +72,7 @@
         </div>
 
         <!--Card uruário cadastrado-->
-        <div class="col-12 mt-4">
+        <div class="col-12 mt-3">
           <div class="card-info">
             <h3 class="titulo">Ultimo usuário cadastrado</h3>
             <hr class="hr">
@@ -95,13 +97,13 @@
     </div>
 
     <!-- Lado direito da tela-->
-    <div class="col-12 col-lg-3">
+    <div class="col-12 col-lg-3 container-perfil">
 
       <!-- Perfil-->
       <div class="card-info">
-        <img src="assets/perfil.jpg" class="img-perfil" width="90px">
+        <img src="assets/perfil.jpg" class="img-perfil">
         <h4>Seja bem vindo</h4>
-        <h5>João Sena</h5>
+        <h5> {{userName}} </h5>
         <li><mat-icon>location_on</mat-icon> SP - Brasil</li>
       </div>
 
@@ -118,4 +120,6 @@
     </div>
 
   </div>
+</div>
+
 </div>
