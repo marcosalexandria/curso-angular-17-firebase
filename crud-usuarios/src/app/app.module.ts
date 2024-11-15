@@ -15,6 +15,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { environment } from '../environments/environment.development';
 import { AngularFireModule } from '@angular/fire/compat';
 import { CrudComponent } from './pages/crud/crud.component'
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,9 @@ import { CrudComponent } from './pages/crud/crud.component'
     MatIconModule,
     MatProgressSpinnerModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    MatInputModule,
+    MatFormFieldModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
