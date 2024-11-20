@@ -4,6 +4,6 @@ export interface User {
   sector: string;
   role: string;
   firebaseId?: string | number;
-  heathPlan?: string;
+  healthPlan?: string;
   dentalPlan?: string;
 }
